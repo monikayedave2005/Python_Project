@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 450px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px gray;
+        }
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        input[type="reset"] {
+            background-color: #dc3545;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        input[type="reset"]:hover {
+            background-color: #b52a37;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+
+            <tr>
+                <td>Father's Name</td>
+                <td><input type="text" name="fathername" required></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" name="phone" required></td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course</td>
+                <td>
+                    <select name="course" required>
+                        <option value="">Select Course</option>
+                        <option>BCA</option>
+                        <option>B.Sc</option>
+                        <option>B.Com</option>
+                        <option>B.Tech</option>
+                        <option>MCA</option>
+                        <option>MBA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea name="address" rows="4" required></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" name="confirm_password" required></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
+{% comment %} its form {% endcomment %}
